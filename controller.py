@@ -37,3 +37,8 @@ def operation():
         case _:
             view.error_value()
     logger.logger(f'{model.first} {model.ops} {model.second} = {model.total}')
+    
+    def enterString(x):
+    x = input()
+    compiled_str = compile(x, 'string', 'eval')
+    print(eval(compiled_str))
